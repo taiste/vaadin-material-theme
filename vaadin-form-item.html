@@ -7,9 +7,8 @@
   <template>
     <style>
       :host {
-        --vaadin-form-item-row-gap: 0;
+        --vaadin-form-item-row-gap: 4px;
       }
-      /* font-weight, margin-bottom, transition and line-height same values as for part label in text-field */
       [part="label"] {
         color: var(--material-secondary-text-color);
         font-family: var(--material-font-family);
@@ -21,6 +20,7 @@
         transition: color 0.4s;
         line-height: 1.333;
       }
+
     </style>
   </template>
 </dom-module>

@@ -49,17 +49,17 @@
 
           <vaadin-form-item>
             <label slot="label">First Name</label>
-            <vaadin-text-field value="Jane"></vaadin-text-field>
+            <input class="full-width" value="Jane"></input>
           </vaadin-form-item>
 
           <vaadin-form-item>
             <label slot="label">Last Name</label>
-            <vaadin-text-field value="Doe"></vaadin-text-field>
+            <input class="full-width" value="Doe"></input>
           </vaadin-form-item>
 
           <vaadin-form-item>
             <label slot="label">Email</label>
-            <vaadin-text-field value="jane.doe@example.com"></vaadin-text-field>
+            <input class="full-width" value="jane.doe@example.com"></input>
           </vaadin-form-item>
 
         </vaadin-form-layout>
@@ -73,6 +73,17 @@
           <vaadin-text-field label="Surname" value="Doe"></vaadin-text-field>
           <vaadin-combo-box items="[&quot;Any&quot;, &quot;Male&quot;, &quot;Female&quot;]" label="Gender"></vaadin-combo-box>
           <vaadin-date-picker label="Date of Birth"></vaadin-date-picker>
+        </vaadin-form-layout>
+      </template>
+    </nice-demo-snippet>
+
+    <nice-demo-snippet>
+      <template slot="source">
+        <vaadin-form-layout>
+          <vaadin-form-item colspan="2">
+            <label slot="label">Conference Abstract</label>
+            <textarea rows="6" class="full-width" style="display: inline-flex; vertical-align: top;"></textarea>
+          </vaadin-form-item>
         </vaadin-form-layout>
       </template>
     </nice-demo-snippet>
@@ -94,23 +105,37 @@
 
             <vaadin-form-item>
               <label slot="label">First Name</label>
-              <vaadin-text-field value="Jane"></vaadin-text-field>
+              <input class="full-width" value="Jane"></input>
             </vaadin-form-item>
 
             <vaadin-form-item>
               <label slot="label">Last Name</label>
-              <vaadin-text-field value="Doe"></vaadin-text-field>
+              <input class="full-width" value="Doe"></input>
             </vaadin-form-item>
 
             <vaadin-form-item>
               <label slot="label">Email</label>
-              <vaadin-text-field value="jane.doe@example.com"></vaadin-text-field>
+              <input class="full-width" value="jane.doe@example.com"></input>
             </vaadin-form-item>
 
           </vaadin-form-layout>
         </div>
       </template>
     </nice-demo-snippet>
+
+    <nice-demo-snippet>
+      <template slot="source">
+        <div theme="dark">
+          <vaadin-form-layout>
+            <vaadin-text-field label="Name" value="Jane"></vaadin-text-field>
+            <vaadin-text-field label="Surname" value="Doe"></vaadin-text-field>
+            <vaadin-combo-box items="[&quot;Any&quot;, &quot;Male&quot;, &quot;Female&quot;]" label="Gender"></vaadin-combo-box>
+            <vaadin-date-picker label="Date of Birth"></vaadin-date-picker>
+          </vaadin-form-layout>
+        </div>
+      </template>
+    </nice-demo-snippet>
+
 
   </div>
 </body>
