@@ -5,10 +5,26 @@
 <dom-module id="material-upload" theme-for="vaadin-upload">
   <template>
     <style>
+      :host {
+        padding-bottom: 16px;
+      }
       [part="drop-label-icon"] {
         margin-right: 12px;
         margin-left: 24px;
       }
+    </style>
+  </template>
+</dom-module>
+
+<dom-module id="material-upload-file" theme-for="vaadin-upload-file">
+  <template>
+    <style>
+    [part$="icon"] {
+      margin-right: 6px;
+    }
+    [part$="button"] {
+      margin-left: 8px;
+    }
     </style>
   </template>
 </dom-module>
